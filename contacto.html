@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="img/Untref_logo.png">
+    <title>Formulario de Contacto</title>
+</head>
+
+<body>
+ <header class="header">
+   <img src="img/Untref_logo.png" alt="Untref_logo" title="Logo de la Institucion" width="171" height="200">
+   <div class="untrefschool">
+    <h1>UntrefSchool</h1>
+    <p>Donde el saber respira.</p>
+   </div>
+</header>
+
+<section class="navegador-principal">
+  <nav aria-label="navegador-principal">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#quienes-somos">Quienes Somos</a></li>
+      <li><a href="#por-que-elegirnos">¿Por Qué Elegirnos?</a></li>
+      <li><a href="#propuesta-educativa">Propuesta Educativa</a></li>
+      <li><a href="#ultimas-noticias">Últimas Noticias</a></li>
+      <li><a href="contacto.html">Contactanos</a></li> 
+    </ul>
+  </nav>
+  </section>
+
+
+  <section class="hero-contacto">
+      <h2>¿Querés saber más o ponerte en contacto con nosotros?</h2>
+      <h3>Si tenés dudas, comentarios o querés saber más sobre nuestra propuesta educativa, dejanos tu mensaje.</h3>
+  </section>
+
+  <main class="main-contact">
+
+    <form action="https://formsubmit.co/untreschool@gmail.com" method="POST" class="formulario"aria-label="Formulario de contacto con UntrefSchool">
+        <fieldset>
+          <div>
+           <label><p>Nombre Completo:</p>
+           <p><input type="text" placeholder="Roberto Perez" name="nombre" ></p> 
+           </label>
+          </div>
+          <div>
+           <label><p>Email:</p>
+            <p><input type="email" placeholder="asd@asd.com" name="email" required></p>
+           </label>
+          </div>
+          <div>
+           <label for="commentField"><p>Comentarios:</p></label>
+           <p> <textarea spellcheck="true"nam="comentarios"  placeholder="Ingrese aqui sus comentarios…" id="commentField"></textarea></p>
+          </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>  
+    </form>
+  </main>
+    
+
+<!-- Footer  -->
+<footer class="footer">
+  <div class="footer-row">
+ <section class="redes-sociales">
+  <h2>Redes sociales</h2>
+    <nav aria-label="navegador-secundario">
+        <ul>
+            <li><a href=""><img src="img/instagram.png" alt="icono instagram"> @UntrefSchool</a></li>
+            <li><a href=""><img src="img/facebook.png" alt="icono facebook"> @UntrefSchool</a></li>
+            <li><a href=""><img src="img/twitterx.png" alt="icono X(ex twitter)">@UntrefSchool</a></li> 
+        </ul>
+    </nav>
+ </section>
+ <section class="info-escuela">
+  <h2>UntrefSchool</h2>
+  <p>Donde el saber respira.</p>
+  <div class="caja-logo">
+    <img src="img/Untref_logo.png" alt="Untref_logo" class="logo" title="Logo de la Institucion" width="171" height="200">
+  </div>
+ </section>
+ <section class="info-contacto">
+    <h2>Informacion de contacto</h2>
+    <p>untreschool@gmail.com</p>
+    <p><a href="tel:54911-1234-5678">Llamanos a nuestros telefonos<img src="img/teléfono.png" alt="imagen telefono"></a></p>
+    <p><a href="https://wa.me/5491112345678">Escribinos por WhatsApp<img src="img/whatsapp.png" alt="logo whatsapp"></a></p>
+ </section>
+ </div>
+ <div class="copyright">
+    <small>&copy;Cecilia Lahitte</small>
+ </div>
+</footer>
+</body>
+</html>

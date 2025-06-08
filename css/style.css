@@ -1,0 +1,669 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Belanosima:wght@400;600&display=swa");
+
+
+
+
+/* Estilos Base */
+ :root {--color-orange: #FC7300;
+        --color-green: #1F8A70;
+        --color-blue: #00425A;
+        --color-dark: #181823;
+        --color-light: #EFF5F5;}
+
+
+/* Estilos generales */
+
+  html{scroll-behavior: smooth;
+       overflow-x: hidden;}
+
+  h1,h2,h3,h4 {font-family: Belanosima;
+               font-weight: 500;}
+
+  body{margin: 0;
+      padding: 0; 
+     /* width: 100%;
+      background-origin: border-box;
+      overflow-x: hidden; */}
+
+  header{margin: 0;
+        /* padding: 0;
+         box-sizing: border-box;*/
+         font-family: Poppins, sans-serif;}
+
+  footer{margin: 0; 
+         padding: 0;}
+
+  *{box-sizing: border-box;}
+
+ /* Header */
+
+ .header {background-color:#181823;
+          color:#EFF5F5;
+          padding: 1rem; 
+          display: flex;
+          flex-direction: row;
+          justify-content:center ;
+          align-items:center ;
+          gap: 3rem;}
+
+   .header img {background-color:#eff5f5d7;
+                max-width: 100%;
+                height: auto; }
+
+   .logo {box-sizing: border-box; }
+              
+ 
+   .untrefschool {color: #EFF5F5;
+                  font-size: 2rem;
+                  box-sizing: border-box;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;}
+
+    .untrefschool h1{margin-bottom: 0;}
+
+    .untrefschool p{margin-top: 0;
+                    margin-bottom: 0;}
+
+   .navegador-principal {position: sticky;
+                         box-sizing: border-box;
+                         top: 0;
+                         z-index: 100;
+                         padding: 1rem;
+                         background-color:#1818239d;
+                         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.246);}            
+
+   .navegador-principal nav ul {display:flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                margin: 0;
+                                list-style-type: none;
+                                gap: 2rem; 
+                                box-sizing: border-box;
+                                flex-wrap: wrap;}
+
+   .navegador-principal nav a {text-decoration: none;
+                               font-size: 1.2rem;
+                               text-shadow: 3px 3px 6px #181820f8;
+                               color:#EFF5F5;}
+   .navegador-principal nav a:hover {color: #FC7300;}
+   .navegador-principal nav a:focus {color: #1F8A70;}
+   .navegador-principal nav a:active {color: #1F8A70;}
+
+ /* Hero  */
+
+  .hero {background-image: url("../img/qs.jpg");
+         background-size: cover;
+         background-position: 0% 20%;
+         background-repeat: no-repeat;
+         min-height: 400px;
+         max-width: none;
+         width: 100%;
+         position: relative;
+         padding-top: 4rem;
+         color:#EFF5F5;
+         text-shadow: 2px 2px 5px #181820;
+         padding: 1rem;
+         box-sizing: border-box;
+         font-family: Poppins, sans-serif;
+         font-size: x-large;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;}
+
+  .hero::before {content: "";
+                 position: absolute;
+                 width: 100%;
+                 height: 100%;
+                 box-sizing: border-box;
+                 inset: 0;
+                 background-color: rgba(0, 0, 0, 0.4); 
+                 z-index: 1;}
+  
+  .hero > * {position: relative;
+             z-index: 2; }   
+  
+   .hero a {text-decoration: none;
+            color:#181820;
+            background-color: #eff5f5a8;
+            margin-top: auto;
+            padding: 0.5rem;
+            border-radius: 2rem;}
+   .hero a:hover {color: #FC7300;}
+   .hero a:focus,
+   .hero a:active {color: #1F8A70;}
+
+
+   .hero-contacto { display: flex;
+                    background-image: url(../img/primaria.jpg);
+                    background-size: cover;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: Poppins sans-serif;
+                    color: #EFF5F5;
+                    text-shadow: 1px 1px 3px #181820;
+                    height: 200px;
+                    position: relative;}
+
+  .hero-contacto h2{font-size:1.7rem;
+                    background-color: #18182036;
+                    border-radius: 2rem;
+                    padding: 0.5rem;}
+  .hero-contacto h3{font-size:1.3rem;
+                    background-color:#18182036;
+                    border-radius: 2rem;
+                    padding: 0.5rem;}
+                    
+
+  .hero-contacto::before {content: "";
+                          position: absolute;
+                          width: 100%;
+                          height: 100%;
+                          box-sizing: border-box;
+                          inset: 0;
+                          background-color: rgba(0, 0, 0, 0.5); 
+                          z-index: 1;}
+  
+  .hero-contacto > * {position: relative;
+                      z-index: 2; } 
+      
+ /* Main */
+
+  .main {background-color:#1818231e;
+         color: #181823;
+         padding: 1rem;
+         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.258);
+         font-family: Belanosima;
+         box-sizing: border-box;}
+
+  .main > p em {display: block;
+                text-align: center;
+                font-style: italic;
+                font-size: 1.2rem;
+                margin: 2rem auto;
+                max-width: 90%;}
+
+  .main article {max-width: 100%;
+                 box-sizing: border-box;
+                 margin: 0;}
+
+  .main-contact{background-color: #18182094;}
+
+   /* Quienes somos */
+
+    .quienes-somos{color: #181820;
+                   background-color: #eff5f5db;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
+                   margin: 1rem;}
+    .quienes-somos h2{font-size: 2rem;}
+    .quienes-somos p{font-size: 1.2rem;
+                     text-align: center;}
+ 
+  /*contenido*/
+
+    .contenido {display: flex;
+               flex-direction: row;
+               justify-content: space-evenly;
+               align-items: center;
+               }
+
+  /* Porque elegirnos */
+
+    .por-que-elegirnos {background-color: #00425a5b;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;}
+
+    .por-que-titulo {display: flex;
+                    flex-direction: column;
+                    align-items: start;}
+
+    .por-que-elegirnos .img-wrapper {position: relative;
+                                     width: 100%;
+                                     max-width: 100%;
+                                     height: 267px;
+                                     box-sizing: border-box;}
+
+    .por-que-elegirnos .img-wrapper img {width: 100%;
+                                         height: 100%;
+                                         object-fit: cover;
+                                         display: block;}
+  
+    .por-que-elegirnos .img-wrapper::before {content:"" ;
+                                             position:absolute;
+                                             top: 0;
+                                             left: 0;
+                                             right: 0;
+                                             bottom: 0;
+                                             background-color: rgba(0,0,0,0.5);
+                                             z-index: 1;}                                     
+            
+
+    .por-que-elegirnos h2{font-size: 1.5rem;
+                          margin-bottom: 2rem;
+                          max-width: 100%;
+                          text-align: center;
+                          box-sizing: border-box;}
+
+    .por-que-elegirnos h3{font-size: 1.3rem;
+                          max-width: 100%;
+                          margin-top: 0.5rem;
+                          margin-bottom: 0;
+                          text-align: center;;
+                          box-sizing: border-box;}                     
+
+    .por-que-elegirnos p{font-size: 1rem;
+                         text-align: center;
+                         padding: 1rem;
+                         margin-top: 0;
+                         margin-bottom: 1rem;
+                         max-width: 100%;
+                         box-sizing: border-box;}                  
+
+
+
+  /* Propuesta educativa */
+
+   .propuesta-educativa {background-color: #00425a5b;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: center;
+                         align-items: center;
+                         max-width: 100%;
+                         box-sizing: border-box;}
+
+    .propuesta-educativa .img-wrapper {position: relative;
+                                     width: 100%;
+                                     max-width: 100%;
+                                     height: 267px;
+                                     box-sizing: border-box;}
+
+    .propuesta-educativa .img-wrapper img {width: 100%;
+                                         height: 100%;
+                                         object-fit: cover;
+                                         display: block;}
+  
+    .propuesta-educativa .img-wrapper::before {content:"" ;
+                                             position:absolute;
+                                             top: 0;
+                                             left: 0;
+                                             right: 0;
+                                             bottom: 0;
+                                             background-color: rgba(0,0,0,0.5);
+                                             z-index: 1;} 
+
+    .propuesta-educativa h2{font-size: 1.5rem;
+                          max-width: 100%;
+                          text-align: center;
+                          box-sizing: border-box;}
+
+    .propuesta-educativa h3{font-size: 1.3rem;
+                            text-align: center;
+                            margin-bottom: 1.5rem;
+                            max-width: 100%;
+                            box-sizing: border-box;}
+
+    .propuesta-educativa h4{font-size: 1.2rem;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            text-align: center;
+                            max-width: 100%;
+                            box-sizing: border-box;}
+
+    .propuesta-educativa p{font-size: 1rem;
+                           text-align:center;
+                           padding: 1rem;
+                           margin-top: 0;
+                           margin-bottom: 1rem;
+                           max-width: 100%;
+                           box-sizing: border-box;} 
+
+ 
+   .formulario {max-width: 500px;
+                margin: 20px auto;
+                background-color: #fc7100;
+                color: #EFF5F5;
+                font-family: Poppins sans-serif;
+                padding: 20px;
+                box-sizing: border-box;
+                text-align: center;}
+
+   .formulario label, .formulario input, .formulario textarea, .formulario button { display: block;
+                                                                                    width: 100%;
+                                                                                    margin: 10px 0;
+                                                                                    font-family: Poppins sans-serif;}
+
+   .formulario input, .formulario textarea {padding: 10px;
+                                            border: 1px solid #EFF5F5;
+                                            background-color: #18182027;}
+                                           
+   .formulario button {padding: 10px;
+                       background-color:#1818203b;
+                       color:#EFF5F5;
+                       border: none;
+                       cursor: pointer; }                                         
+
+
+
+/* Aside*/
+
+  .aside {background-color:rgba(0, 0, 0, 0.453);
+          color: #EFF5F5;
+          font-family: Poppins, sans-serif;
+          margin: 0; 
+          padding: 1rem;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          align-items: center;}
+
+  .aside h3 {text-align: center;}
+  .aside p {text-align: center;}
+
+  #ultimas-noticias h2 {text-align: center;}
+  
+  .aside-top{display: flex;
+             flex-direction: row;
+             align-items: center;
+             justify-content: center;
+             gap: 1rem;}
+
+  .titulo-table{font-size: 2rem;
+                font-family: Poppins sans-serif;
+                color: #FC7300;
+                text-shadow: 2px 2px 5px #181820;}
+
+  .eventos-recientes {color: #FC7300;
+                      text-shadow: 2px 2px 5px #181820;
+                      text-align: center;
+                      max-width: 100%;
+                      box-sizing: border-box;}
+  
+  .collapsible-table {width: 100%;
+                      border-collapse: separate;
+                      border-spacing: 2px;
+                      color: #EFF5F5;}
+
+  .eventos-recientes .collapsible-table tr {cursor: pointer;
+                                            background-color: #1F8A70;}
+
+  .eventos-recientes .collapsible-table tr td {padding:0.5px;
+                                               border: 1px #EFF5F5;}                                           
+
+/*  Footer */
+
+  .footer {background-color: #181820;
+           color: #EFF5F5;
+           min-height: 200px;
+           margin: 0; 
+           padding: 1.5rem;
+           box-sizing: border-box;
+           font-family: Poppins, sans-serif;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           gap: 2rem;
+           flex-wrap: wrap;}
+ 
+  .footer-row {display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              max-width: 1200px;
+              gap: 1rem;
+              flex-wrap: wrap;}
+   
+  .redes-sociales {flex: 1;
+                   min-width: 150px;
+                   text-align: center;}
+                                        
+  .info-escuela {color: #EFF5F5;
+                 font-size: 1rem;
+                 box-sizing: border-box;
+                 display: flex;
+                 flex: 1;
+                 flex-direction: column;
+                 align-items: center;
+                 text-align: center;}
+
+  .info-escuela h2{margin-bottom: 0.5rem;
+                   font-size: 2rem;}
+
+  .info-escuela p{font-size: 1rem;
+                  margin-top: 0.5rem;
+                  margin-bottom: 0.5rem;}      
+                     
+  .info-escuela img{max-width: 200px;
+                    height: auto;
+                    background-color:#eff5f5d7;}                   
+
+  .info-contacto {display: flex;
+                  flex: 1;
+                  flex-direction: column;
+                  align-items: center;
+                  text-align: center;}
+
+
+   .copyright {font-size: 0.8rem;
+               text-align: center;
+               display: block;}
+
+   .redes-sociales ul {list-style: none;
+                       padding: 0;}
+
+   .redes-sociales a, .info-contacto a {color: #EFF5F5;
+                                        text-decoration: none;
+                                        margin: 0.5rem;
+                                        display: inline-block;}  
+   .redes-sociales a:visited, .info-contacto a:visited {color: #00425A;}
+   .redes-sociales a:hover, .info-contacto a:hover {color: #FC7300;}
+   .redes-sociales a:focus, .info-contacto a:focus {color: #1F8A70;}
+   .redes-sociales a:active, .info-contacto a:active {color:#1F8A70 (31, 138, 111, 0.69)8A70;}
+                       
+/* max-width 768px*/
+
+ @media (max-width: 768px) {
+
+  .header {display: flex;
+           flex-direction: column;
+           column-gap: 0.5rem;
+           padding: 0.5rem;
+           box-sizing: border-box;}
+  .header img {max-width: 120px;
+               height: auto;}
+  .navegador-principal{padding: 0.5rem;
+                       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.246);}
+  .navegador-principalnav a{font-size: 1rem;
+                            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.246);}
+  .hero {min-height: 300px;
+         padding-top: 2rem;
+         padding: 0.5rem;
+         font-size: 1.5rem;}
+  .hero h3 {font-size: 1.2rem;}
+  .hero::before{background-color: rgba(0, 0, 0, 0.246);}
+  .hero a {color:#181820;
+           background-color: #eff5f57d;
+           border: 2px #EFF5F5;}
+  .hero-contacto{height: 250px;
+                 text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+                 padding: 0.5rem;}
+  .hero-contacto h3{font-size: 1.2rem;}
+  .main {background-color: #00425a16;}
+  .aside {color:#EFF5F5;
+          padding: 0.5rem;
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.246);}
+  .quienes-somos{color: #181823;
+                 background-color:#eff5f5e2;
+                 margin: 0.5rem;}
+  .quienes-somos h2{font-size: 1.5rem;}
+  .quienes-somos p{font-size: 1rem;}
+  .contenido{flex-direction: column;
+             justify-content: center;
+             gap: 1.5rem;}
+  .contenido article {width: 100%;}
+  .por-que-elegirnos{ margin: 0.5rem;}
+  .por-que-titulo {align-items: center;}
+  .por-que-elegirnos .img-wrapper {height: 200px;}
+  .por-que-elegirnos h2{font-size: 0.9rem;
+                        margin-bottom: 1rem;}
+  .por-que-elegirnos h3 {font-size: 1.1rem;}
+  .propuesta-educativa{margin: 0.5rem;}
+  .propuesta-educativa .img-wrapper {height: 200px;}
+  .propuesta-educativa h2 {font-size: 1.3rem;}
+  .propuesta-educativa h3 {font-size: 1.1rem;}
+  .propuesta-educativa h4 {font-size: 1rem;}
+  .propuesta-educativa p {font-size: 0.9rem;
+                          padding: 0.5rem;
+                          margin-bottom: 0.5rem;}
+  .formulario {max-width: 90%;
+               margin: 10px auto;
+               padding: 15px;}
+  .formulario label{font-size: 1rem;}
+  .formulario input .formulario textarea {padding: 8px;
+                                          font-size: 0.9px;}
+  .formulario button {padding: 8px;
+                      font-size: 1rem;}
+  .aside {padding: 0.5rem;}
+  .aside-top {flex-direction: column;
+              gap: 0.8rem;}
+  .aside-top article {width: 100%;}
+  .aside h3 {font-size: 1.2rem;}
+  .aside p {font-size: 0.9rem;}
+  .titulo-table {font-size: 1.5rem;
+                 text-shadow: 1px 1px 3px rgba(0,0,0,0.5);} 
+  .eventos-recientes .collapsible-table{font-size: 0.9rem;
+                                        border-spacing: 1px;}
+  .eventos-recientes .collapsible-table tr {cursor: default;}
+  .eventos-recientes .collapsible-table tr td {padding: 0.5rem;}
+  .footer {min-height: 150px;
+           padding: 1rem;}
+  .footer-row{flex-direction: column;
+              gap: 1rem;
+              align-items: center;}
+  .footer-row > * {width: 100%;}
+  .redes-sociales{min-width: 100%;
+                  text-align: center;}
+  .info-escuela {min-width: 100%;}
+  .info-escuela h2 {font-size: 1.3rem;
+                    margin-bottom: 0.3rem;}
+  .info-escuela p { font-size: 0.9rem;
+                    margin: 0.3rem;}
+  .info-escuela img {max-width: 150px;
+                     background-color: #EFF5F5;}
+  .info-contacto {min-width: 100%;}
+  .info-contacto h2 {font-size: 1.3rem;
+                     margin-bottom: 0.3rem;}
+  .info-contacto p, .info-contacto a {font-size: 0.9rem;
+                                      margin: 0.3rem;}
+  .redes-sociales ul {margin: 0;}
+  .redes-sociales a, .info-contacto a {margin: 0.3rem;
+                                       font-size: 0.9rem;}
+  .copyright{font-size: 0.7rem;}
+ }
+
+/* max-width 480px*/
+
+ @media (max-width:480px){
+
+ .header {gap: 0.3rem;
+          padding: 0.3rem;}
+  .header img {max-width: 100px;}
+  .navegador-principal nav {padding: 0.3rem;}
+  .navegador-principal nav ul {gap: 0.8rem;}
+  .navegador-principal nav a{font-size: 0.9rem;}
+  .navegador-principal .menu-toggle {display: none;}
+  .navegador-principal .menu-icon {display: block;
+                                   font-size: 1.5rem;
+                                   color: #FC7300;
+                                   cursor: pointer;
+                                   text-align: center;
+                                   padding: 0.5rem;}
+  .navegador-principal .nav-menu{display: none;}
+  .menu-toggle:checked~.nav-menu{display: flex;
+                                 flex-direction: column;
+                                 gap: 0.5rem;
+                                 width: 100%;}
+  .navegador-principal .nav-menu li {width: 100%;}
+  .navegador-principal .nav-menu a {font-size: 0.9rem;
+                                    padding: 0.5rem;
+                                    color: #EFF5F5;
+                                    text-decoration: none;
+                                    display: block;}
+  .hero {min-height: 200px;
+         padding-top: 1rem;
+         padding: 0.3rem;
+         font-size: 1.2rem;}
+  .hero h3 {font-size: 1rem;}
+  .hero a {font-size: 0.9rem;
+           padding: 0.3rem;}
+  .hero-contacto{height: 180px;
+                 padding: 0.3rem;}
+  .hero-contacto h3{font-size: 1rem;}
+  .main {padding: 0.3rem;}
+  .aside {padding: 0.3rem;
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.246);}
+  .quienes-somos{margin: 0.3rem;}
+  .quienes-somos h2{font-size: 1.2rem;}
+  .quienes-somos p{font-size: 0.9rem;}
+  .contenido{gap: 1rem;}
+  .por-que-elegirnos{ margin: 0.3rem;}
+  .por-que-elegirnos .img-wrapper {height: 100px;}
+  .por-que-elegirnos h2{font-size: 0.7rem;
+                        margin-bottom: 0.7rem;}
+  .por-que-elegirnos h3 {font-size: 1rem;}
+  .propuesta-educativa{margin: 0.3rem;}
+  .propuesta-educativa .img-wrapper {height: 100px;}
+  .propuesta-educativa h2 {font-size: 1.1rem;}
+  .propuesta-educativa h3 {font-size: 1rem;}
+  .propuesta-educativa h4 {font-size: 0.9rem;}
+  .propuesta-educativa p {font-size: 0.7rem;
+                          padding: 0.3rem;
+                          margin-bottom: 0.3rem;}
+  .formulario {margin: 7px auto;
+               padding: 10px;}
+  .formulario label{font-size: 0.9rem;}
+  .formulario input .formulario textarea {padding: 6px;
+                                          font-size: 0.7px;}
+  .formulario button {padding: 6px;
+                      font-size: 0.9rem;}
+  .aside {padding: 0.3rem;}
+  .aside-top {flex-direction: column;
+              gap: 0.6rem;}
+  .aside h3 {font-size: 0.9rem;}
+  .aside p {font-size: 0.7rem;}
+  .titulo-table {font-size: 1.3rem;} 
+  .eventos-recientes .collapsible-table{font-size: 0.5rem;
+                                        border-spacing: 1px;}
+  .eventos-recientes .collapsible-table tr td {padding: 0.4rem;}
+  .footer {min-height: 100px;
+           padding: 0.9rem;}
+  .footer-row{gap: 0.9rem;}
+  .info-escuela h2 {font-size: 1.1rem;
+                    margin-bottom: 0.3rem;}
+  .info-escuela p { font-size: 0.9rem;
+                    margin: 0.3rem;}
+  .info-escuela img {max-width: 100px;}
+  .info-contacto h2 {font-size: 1.1rem;
+                     margin-bottom: 0.3rem;}
+  .info-contacto p, .info-contacto a {font-size: 0.7rem;}
+  .redes-sociales a, .info-contacto a { font-size: 0.7rem;}
+  .copyright{font-size: 0.7rem;}
+}
+   
+/* min-width 481px*/
+
+@media (min-width:481px){
+.navegador-principal .menu-toggle, .navegador-principal .menu-icon{display: none;}
+.navegador-principal .nav-menu{display: flex;
+                               flex-direction: row;
+                               gap: 2rem;}
+}
