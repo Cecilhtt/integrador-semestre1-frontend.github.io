@@ -617,7 +617,7 @@
   .contenido{gap: 1rem;}
   .por-que-elegirnos{ margin: 0.3rem;}
   .por-que-elegirnos .img-wrapper {height: 100px;}
-  .por-que-elegirnos h2{font-size: 0.7rem;
+  .por-que-elegirnos h2{font-size: 1.1rem;
                         margin-bottom: 0.7rem;}
   .por-que-elegirnos h3 {font-size: 1rem;}
   .propuesta-educativa{margin: 0.3rem;}
@@ -649,13 +649,13 @@
   .footer-row{gap: 0.9rem;}
   .info-escuela h2 {font-size: 1.1rem;
                     margin-bottom: 0.3rem;}
-  .info-escuela p { font-size: 0.9rem;
+  .info-escuela p { font-size: 1rem;
                     margin: 0.3rem;}
   .info-escuela img {max-width: 100px;}
   .info-contacto h2 {font-size: 1.1rem;
                      margin-bottom: 0.3rem;}
-  .info-contacto p, .info-contacto a {font-size: 0.7rem;}
-  .redes-sociales a, .info-contacto a { font-size: 0.7rem;}
+  .info-contacto p, .info-contacto a {font-size: 0.9rem;}
+  .redes-sociales a, .info-contacto a { font-size: 0.9rem;}
   .copyright{font-size: 0.7rem;}
 }
    
